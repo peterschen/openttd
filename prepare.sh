@@ -25,8 +25,8 @@ dpkg -i openttd-${OPENTTD_VERSION}-linux-${ID}-${UBUNTU_CODENAME}-amd64.deb
 ## Download GFX and install
 mkdir -p /usr/share/games/openttd/baseset/
 cd /usr/share/games/openttd/baseset/
-wget -q http://bundles.openttdcoop.org/opengfx/releases/${OPENGFX_VERSION}/opengfx-${OPENGFX_VERSION}.zip
-unzip opengfx-${OPENGFX_VERSION}.zip
+wget -q https://cdn.openttd.org/opengfx-releases/${OPENGFX_VERSION}/opengfx-${OPENGFX_VERSION}-all.zip
+unzip opengfx-${OPENGFX_VERSION}-all.zip
 tar -xf opengfx-${OPENGFX_VERSION}.tar
 rm -rf opengfx-*.tar opengfx-*.zip
 
